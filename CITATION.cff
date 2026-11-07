@@ -1,0 +1,35 @@
+
+cff-version: 1.2.0
+message: "If you use Universal Document Forensics in your work, please cite this software."
+type: software
+
+title: "Universal Document Forensics"
+abstract: >-
+  A local, cross-platform Python tool for forensic examination
+  of Microsoft Office and PDF documents. It examines metadata,
+  document structures, file integrity, software identifiers,
+  and technical characteristics potentially associated with
+  programmatic document generation. Findings are presented
+  in human-readable reports without automatically concluding
+  that artificial intelligence was used.
+
+authors:
+  - family-names: "Päivärinta"
+    given-names: "Jani"
+
+version: "1.3"
+date-released: "2026-11-07"
+
+repository-code: "https://git.janipaivarinta.com/jani/universal-document-forensics"
+
+license: MIT
+
+keywords:
+  - digital forensics
+  - document analysis
+  - metadata
+  - academic integrity
+  - Microsoft Office
+  - PDF
+  - Python
+  - AI transparency

@@ -1,6 +1,6 @@
 # Universal Document Forensics
 
-**Version 1.3** · Local, evidence-based technical examination of Office documents and PDFs.
+**Version 1.0** · Local, evidence-based technical examination of Office documents and PDFs.
 
 Universal Document Forensics is a Python command-line tool for inspecting document metadata, internal structures, integrity, and software identifiers. It produces human-readable forensic reports while **leaving the original files unchanged**.
 
@@ -23,7 +23,7 @@ Additional checks include SHA-256 file hashes and noteworthy technical character
 ## Requirements
 
 - Python 3 (use a currently supported version).
-- The script: `universal_document_forensics_1.3.py`.
+- The script: `universal_document_forensics.py`.
 - Optional Python packages `olefile` and `pypdf` for more complete legacy Office and PDF examination.
 
 Modern Office ZIP/XML inspection primarily uses Python's standard library. Some checks may be reduced if optional packages are missing.
@@ -51,7 +51,7 @@ cd universal-document-forensics
 Check the command-line options:
 
 ```bash
-python3 universal_document_forensics_1.3.py --help
+python3 universal_document_forensics.py --help
 ```
 
 ### macOS
@@ -70,7 +70,7 @@ cd universal-document-forensics
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install olefile pypdf
-python universal_document_forensics_1.3.py --help
+python universal_document_forensics.py --help
 ```
 
 If Git is not installed, download the repository as an archive, extract it, and open Terminal in the extracted directory.
@@ -86,7 +86,7 @@ git clone https://git.janipaivarinta.com/jani/universal-document-forensics.git
 cd universal-document-forensics
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install olefile pypdf
-.\.venv\Scripts\python.exe .\universal_document_forensics_1.3.py --help
+.\.venv\Scripts\python.exe .\universal_document_forensics.py --help
 ```
 
 Alternatively, download and extract the repository ZIP, then open PowerShell in that directory and run the commands starting with `py -3 -m venv .venv`.
@@ -103,7 +103,7 @@ The examples below assume that the script accepts `--input-dir`, `--file`, and `
 
 ```bash
 cd ~/Desktop
-python3 "/path/to/universal-document-forensics/universal_document_forensics_1.3.py" \
+python3 "/path/to/universal-document-forensics/universal_document_forensics.py" \
   --input-dir . \
   --output-dir ./forensics-reports
 ```
@@ -115,7 +115,7 @@ Replace `/path/to/universal-document-forensics/` with the actual installation pa
 ```powershell
 cd "$HOME\Desktop"
 & "C:\Tools\universal-document-forensics\.venv\Scripts\python.exe" `
-  "C:\Tools\universal-document-forensics\universal_document_forensics_1.3.py" `
+  "C:\Tools\universal-document-forensics\universal_document_forensics.py" `
   --input-dir . `
   --output-dir .\forensics-reports
 ```
@@ -125,7 +125,7 @@ cd "$HOME\Desktop"
 **Linux / macOS** (from the repository directory):
 
 ```bash
-python3 universal_document_forensics_1.3.py \
+python3 universal_document_forensics.py \
   --file "assignment.docx" \
   --output-dir ./forensics-reports
 ```
@@ -133,7 +133,7 @@ python3 universal_document_forensics_1.3.py \
 **Windows PowerShell** (from the repository directory):
 
 ```powershell
-.\.venv\Scripts\python.exe .\universal_document_forensics_1.3.py `
+.\.venv\Scripts\python.exe .\universal_document_forensics.py `
   --file "assignment.docx" `
   --output-dir .\forensics-reports
 ```
@@ -143,7 +143,7 @@ python3 universal_document_forensics_1.3.py \
 To invoke the script from any working directory, add an alias to your shell configuration (`~/.bashrc` for Bash or `~/.zshrc` for Zsh), using the real script path:
 
 ```bash
-alias universal-forensics='python3 "/absolute/path/to/universal_document_forensics_1.3.py" --input-dir . --output-dir ./forensics-reports'
+alias universal-forensics='python3 "/absolute/path/to/universal_document_forensics.py" --input-dir . --output-dir ./forensics-reports'
 ```
 
 Reload the configuration (for Bash, `source ~/.bashrc`). Then run `universal-forensics` from the directory containing documents to inspect.
@@ -205,7 +205,7 @@ Citation metadata is available in [CITATION.cff](CITATION.cff).
 
 **Author:** Jani Päivärinta  
 **Software:** Universal Document Forensics  
-**Version:** 1.3  
+**Version:** 1.0  
 **Year:** 2026  
 **License:** MIT
 

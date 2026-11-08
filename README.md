@@ -44,7 +44,7 @@ sudo apt install python3 python3-olefile python3-pypdf git
 Clone and enter the repository:
 
 ```bash
-git clone https://git.janipaivarinta.com/jani/universal-document-forensics.git
+git clone https://git.janipaivarinta.com/uwasa/universal-document-forensics.git
 cd universal-document-forensics
 ```
 
@@ -65,7 +65,7 @@ python3 --version
 Clone the repository and create an isolated Python environment:
 
 ```bash
-git clone https://git.janipaivarinta.com/jani/universal-document-forensics.git
+git clone https://git.janipaivarinta.com/uwasa/universal-document-forensics.git
 cd universal-document-forensics
 python3 -m venv .venv
 source .venv/bin/activate
@@ -82,7 +82,7 @@ Install a current Python 3 release from [python.org](https://www.python.org/down
 In **PowerShell**, clone the repository (if Git is installed), then create a virtual environment:
 
 ```powershell
-git clone https://git.janipaivarinta.com/jani/universal-document-forensics.git
+git clone https://git.janipaivarinta.com/uwasa/universal-document-forensics.git
 cd universal-document-forensics
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install olefile pypdf

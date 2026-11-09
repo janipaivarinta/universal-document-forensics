@@ -19,6 +19,7 @@ authors:
 
 version: "1.0"
 date-released: "2026-11-07"
+doi: 10.5281/zenodo.24081280
 
 repository-code: "https://github.com/janipaivarinta/universal-document-forensics"
 

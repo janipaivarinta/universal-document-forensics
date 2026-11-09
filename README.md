@@ -1,5 +1,7 @@
 # Universal Document Forensics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24081280.svg)](https://doi.org/10.5281/zenodo.24081280)
+
 **Version 1.0** · Local, evidence-based technical examination of Office documents and PDFs.
 
 Universal Document Forensics is a Python command-line tool for inspecting document metadata, internal structures, integrity, and software identifiers. It produces human-readable forensic reports while **leaving the original files unchanged**.

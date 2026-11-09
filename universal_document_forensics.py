@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Universal Office & PDF Forensics 1.3 (Python 3.9+).
+"""Universal Office & PDF Forensics 1.0 (Python 3.9+).
 Read-only, local analysis. Optional: pip install olefile pypdf
 Reports classify technical evidence and document its significance.
 """
